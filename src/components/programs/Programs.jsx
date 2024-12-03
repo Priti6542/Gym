@@ -17,7 +17,7 @@ function Programs() {
             <div className={styles.program_categories}>
                 {programsData.map((program)=>(
                     <div className={styles.category}>
-                        {program.image}
+                        {program.logo}
 
                         <span >{program.heading}</span>
                         <span>{program.details}</span>
@@ -34,3 +34,4 @@ function Programs() {
 }
 
 export default Programs
+

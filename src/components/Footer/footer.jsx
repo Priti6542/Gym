@@ -5,7 +5,7 @@ import insta from '../../assets/insta.png'
 import linkedin from '../../assets/linkedin.png'
 import logo from '../../assets/logo.png'
 
-function footer() {
+function Footer() {
     return (
         <div className={styles.Footer_container}>
             <hr />
@@ -23,4 +23,4 @@ function footer() {
     )
 }
 
-export default footer
+export default Footer

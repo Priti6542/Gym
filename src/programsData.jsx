@@ -1,27 +1,28 @@
 // programsData.jsx
+import { LiaDumbbellSolid } from "react-icons/lia";
+import { FaRunning } from "react-icons/fa";
+import { LiaBurnSolid } from "react-icons/lia";
+import { LiaHeartbeatSolid } from "react-icons/lia";
+
 export const programsData = [
     {
-      logo: "fa-thin fa-dumbbell",
+      logo: <LiaDumbbellSolid size={30} />,
       heading: "Strength Training",
       details: "In this program, you are trained to improve your strength through many exercises."
     },
     {
-      logo: "fa-solid fa-person-running",  // Font Awesome icon
+      logo: <FaRunning size={30} />, // Font Awesome icon
       heading: "Cardio Training",
       details: "In this program, you are trained to do sequential moves in range of 20 until 30 minutes."
     },
     {
-      logo: `<svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="8" cy="8" r="7" stroke="black" stroke-width="1" fill="none"/>
-              </svg>`,
+      logo: <LiaBurnSolid size={30}/>,
       heading: "Fat Burning",
       details: "This program is suitable for you who wants to get rid of your fat and lose their weight."
     },
 
     {
-      logo: `<svg width="16" height="15" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="8" cy="8" r="7" stroke="black" stroke-width="1" fill="none"/>
-              </svg>`,
+      logo: <LiaHeartbeatSolid size={30}/>,
       heading: "Health Fitness",
       details: "This programs is designed for those who exercises only for their body fitness not body building."
     }

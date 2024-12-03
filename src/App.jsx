@@ -7,7 +7,8 @@ import Reasons from './components/reasons/Reasons'
 import Plans from './components/plans/Plans'
 import Testinomials from './components/testinomials/Testinomials'
 import Join from './components/join/Join'
-import Footer from './components/Footer/footer'
+import Footer from './components/footer/Footer'
+
 
 
 function App() {

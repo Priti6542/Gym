@@ -48,17 +48,19 @@
 .plan:nth-child(2){
     background-image: linear-gradient(rgb(224, 66, 26),rgb(244, 184, 81));
     transform: scale(1.1);
+    
 }
-.plan>:nth-child(1){
+/* .plan>:nth-child(2){
     font-weight: bold;
-}
+    
+} */
 .plan>svg{
     fill: var(--orange,orange);
     width: 2rem;
     height: 2rem;
 }
 .plan>:nth-child(2){
-    font-size: 3rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 .plan:nth-child(3){

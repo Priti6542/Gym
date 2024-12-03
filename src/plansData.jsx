@@ -1,6 +1,10 @@
+import { TbHeartPlus } from "react-icons/tb";
+import { LuCrown } from "react-icons/lu";
+import { LuDumbbell } from "react-icons/lu";
+
 export const plansData = [
     {
-        icon: "fa-light fa-heart-circle-plus",
+        icon: <TbHeartPlus />,
         name: "BASIC PLAN",
         price: "25",
         features: [
@@ -10,7 +14,7 @@ export const plansData = [
         ]
     },
     {
-        icon: "fa-light fa-star-circle", // Add an appropriate icon here
+        icon: <LuCrown />, // Add an appropriate icon here
         name: "PREMIUM PLAN",
         price: "30",
         features: [
@@ -22,7 +26,7 @@ export const plansData = [
     },
 
     {
-        icon: "fa-light fa-star-circle", // Add an appropriate icon here
+        icon: <LuDumbbell />, // Add an appropriate icon here
         name: "PRO PLAN",
         price: "45",
         features: [
