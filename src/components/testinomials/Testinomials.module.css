@@ -1,0 +1,142 @@
+/* Corrected class name */
+.Testimonials {
+    margin-left: 3rem;
+    margin-top: 5rem;
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem; /* Fixed typo from `pad` to `padding` */
+}
+
+.stroke_text {
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.left_t {
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+}
+
+.left_t > :nth-child(1) {
+    color: var(--orange, rgb(240, 113, 16));
+    font-weight: bold;
+}
+
+.left_t > :nth-child(2),
+.left_t > :nth-child(3) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.left_t > :nth-child(4) {
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.right_t {
+    flex: 1;
+    position: relative;
+}
+
+.right_t > img {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+
+.right_t > :nth-child(1) {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+
+.right_t > :nth-child(2) {
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    background-image: linear-gradient(rgb(232, 69, 5), rgb(219, 136, 76));
+    right: 7rem;
+    top: 4rem;
+}
+
+.arrows {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+
+.arrows > img {
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .Testimonials {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-top: 2rem; /* Adjust margin for better spacing on small screens */
+    }
+
+    .left_t > :nth-child(2),
+    .left_t > :nth-child(3) {
+        font-size: 2rem; /* Adjust font size for mobile screens */
+    }
+
+    .right_t {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .right_t > div {
+        position: relative;
+        display: none;
+    }
+
+    .right_t > img {
+        top: 0;
+        right: 0;
+        position: relative;
+        align-self: center;
+        width: 100%; /* Allow image to be responsive on mobile */
+        height: auto;
+    }
+
+    .right_t > :last-child {
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+
+    /* Position the arrows better for mobile */
+    .arrows {
+        position: relative;
+        bottom: 1rem;
+        left: 0;
+        justify-content: center;
+    }
+
+    .arrows > img {
+        width: 2rem; /* Larger arrow icons for better accessibility on mobile */
+    }
+}

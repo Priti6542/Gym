@@ -1,0 +1,99 @@
+/* General styles */
+.Footer_container {
+    margin-top: 6rem;
+    position: relative;
+}
+
+.Footer_container > hr {
+    border: 1px solid var(--lightgrey, lightgrey);
+}
+
+/* Footer styling */
+.footer {
+    padding: 2rem 3rem;  /* Default padding */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;  /* Reduced gap for mobile */
+    align-items: center;
+    justify-content: center;
+    height: auto;  /* Set height to auto for flexibility */
+}
+
+/* Social links */
+.social_links {
+    display: flex;
+    gap: 3rem;  /* Default gap between icons */
+    justify-content: center;  /* Ensure it's centered */
+}
+
+.social_links > img {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.logo_f > img {
+    width: 10rem;
+}
+
+/* Responsive styles */
+
+/* For tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 1.5rem 2rem;  /* Adjust padding for smaller devices */
+        gap: 2rem;  /* Reduce gap */
+    }
+
+    .social_links {
+        gap: 2rem;  /* Adjust the gap between icons */
+    }
+
+    .logo_f > img {
+        width: 8rem;  /* Make logo slightly smaller on smaller screens */
+    }
+
+    .social_links > img {
+        width: 1.5rem;
+        height: 1.5rem;  /* Reduce size of social icons */
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 1rem 1.5rem;  /* Further reduce padding */
+        gap: 1.5rem;  /* Further reduce gap */
+        height: auto;  /* Ensure the footer height is flexible */
+    }
+
+    .social_links {
+        gap: 1.5rem;  /* Reduce gap further */
+    }
+
+    .logo_f > img {
+        width: 6rem;  /* Make logo even smaller */
+    }
+
+    .social_links > img {
+        width: 1.2rem;
+        height: 1.2rem;  /* Even smaller social icons */
+    }
+}
+
+/* For large desktop devices (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .footer {
+        padding: 3rem 5rem;  /* Add more padding for larger screens */
+        gap: 4rem;  /* Keep the gap larger */
+        height: 20rem;  /* Keep footer height fixed for larger screens */
+    }
+
+    .logo_f > img {
+        width: 12rem;  /* Make logo slightly larger for larger screens */
+    }
+
+    .social_links {
+        gap: 4rem;  /* Maintain gap for larger screens */
+    }
+}
