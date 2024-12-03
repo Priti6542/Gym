@@ -7,8 +7,7 @@ import Reasons from './components/reasons/Reasons'
 import Plans from './components/plans/Plans'
 import Testinomials from './components/testinomials/Testinomials'
 import Join from './components/join/Join'
-import Footer from './components/footer/Footer'
-
+import Footergym from './components/footergym/Footergym'
 
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
     <Plans/>
     <Testinomials/>
     <Join/>
-    <Footer/>
+    <Footergym/>
      
     </>
   )

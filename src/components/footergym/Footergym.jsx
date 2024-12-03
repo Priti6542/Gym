@@ -1,12 +1,13 @@
 import React from 'react'
-import styles from './Footer.module.css'
+import styles from './Footergym.module.css'
 import GitHub from '../../assets/GitHub.png'
 import insta from '../../assets/insta.png'
 import linkedin from '../../assets/linkedin.png'
 import logo from '../../assets/logo.png'
 
-function Footer() {
-    return (
+
+function Footergym() {
+  return (
         <div className={styles.Footer_container}>
             <hr />
             <div className={styles.footer}>
@@ -23,4 +24,4 @@ function Footer() {
     )
 }
 
-export default Footer
+export default Footergym
